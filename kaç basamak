@@ -1,0 +1,40 @@
+#include <stdio.h>
+//kullanıcıdan aldığımız sayının kaç basamaklı olduğunu söyleyen kod
+int main()
+{
+
+
+	int sayi;
+
+	printf("Pozitif bir sayi giriniz, maksimum 5 basamakli olsun:");
+	scanf_s("%d", &sayi);
+
+	if (sayi < 10) {
+
+		printf("Girdiginiz sayııı tek basamaklidir. ");
+	}
+	else if (sayi >= 10 && sayi < 100)
+	{
+		printf("Girdiğiniz sayııı iki basamaklidir. ");
+	}
+	else if (sayi >= 100 && sayi < 1000)
+	{
+
+		printf("Girdiginiz sayııı uc basamaklidir. ");
+	}
+	else if (sayi >= 1000 && sayi < 10000)
+	{
+
+		printf("Girdiginiz sayııı dort basamaklidir.");
+
+	}
+
+	else if (sayi >= 10000 && sayi < 100000)
+	{
+
+
+		printf("Girdiginiz sayııı bes basamaklidir. ");
+	}
+
+	return 0;
+}
