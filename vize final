@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+	
+
+
+	int vize, final;
+	printf("vize ve final notunuzu giriniz:");
+	scanf_s("%d  %d",&vize,& final);
+	float ort;
+    ort= vize * 0.4 + final * 0.6;
+	printf("ortalama: % 1.f \n", ort);
+	printf("gecme sonucu:%d",ort>=50);
+
+
+		return 0;
+
+}
