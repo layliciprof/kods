@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+    int i,a, faktoriyel = 1;
+
+    printf("faktöriyeli alinacak sayiyi giriniz:");
+    scanf_s("%d", &a);
+
+    for (i = 2;  i<= a; i++) {
+        faktoriyel *= i;
+
+    }
+
+    printf("Girdiginiz sayinin faktoriyeli:%d", faktoriyel);
+
+
+
+
+
+
+
+    return 0;
+}
