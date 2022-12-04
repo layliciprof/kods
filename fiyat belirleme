@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main()//benim anladığım şekilde yaptığım kod farklı aslında
+{
+    int urunfiyati;
+    int b;
+    int a;
+    int urunfiyatison;
+    printf("urun fiyati giriniz:");
+    scanf("%d", &urunfiyati);
+    printf("Odemeyi taksitle mi yapmak istersiniz,cevabinız evetse 5'e basin degilse 3'e");
+
+    scanf("%d", &a);
+
+    printf(" odemeyi ozel kartla yapacaksınız 6'ya basın ozel kart değilse 1");
+    scanf("%d", &b);
+
+    printf("odemeniz seciminize gore yapilacak.");
+
+
+    if (a==5) {
+        if (b==6) {
+            urunfiyatison = urunfiyati * 1.2 - 20;
+            printf("odeyeceginiz tutar:%d", urunfiyatison);
+
+        } else {
+            urunfiyatison = urunfiyati * 1.2;
+            printf("odeyeceginiz tutar:%d", urunfiyatison);
+        }
+    }
+
+    if (a==3) {
+        if (b==6) {
+            urunfiyatison = urunfiyati - 20;
+            printf("odeyeceginiz tutar:%d", urunfiyatison);
+
+        } else {
+            urunfiyatison = urunfiyati;
+            printf("odeyeceginiz tutar:%d", urunfiyatison);
+        }
+    }
+    printf("gule gule kullanin");
+
+
+
+    return 0;
+}
