@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main() {
+	
+
+	float delta;
+	int a, b, c;
+	printf("3 tane sayi giriniz,tek basamakli:");
+		scanf_s("%d",&a);
+		scanf_s("%d",&b);
+		scanf_s("%d",&c);
+
+delta=b*b-4*a*c;
+	printf("girdiğiniz sayiların deltasi:%1.f",delta);
+	printf("delta sonucunuz:%d", delta >= 0);  
+	
+
+
+
+		return 0;
+
+}
