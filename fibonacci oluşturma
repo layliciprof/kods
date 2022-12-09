@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(void)
+{  
+
+	int a=1, b=1, c,i;
+	int sayi;
+	int fakt = 1;
+	
+	printf("fibonacci serisinin son   sayisini giriniz:");
+	scanf_s("%d",&sayi);
+	printf("%d\n%d\n",a,b);
+	for (i = 1; i < sayi; i++)
+
+	{
+		
+		c = a + b;
+			a = b;
+		b = c;
+			printf("%d\n", c);
+
+	}
+
+
+	return 0;
+}
