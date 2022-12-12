@@ -1,1 +1,48 @@
+#include<stdio.h>
 
+int main(void)
+{
+	int sayi;
+
+	printf("1-7 arasında bir sayi giriniz, 1 ve 7 dahil:");
+	scanf_s("%d",&sayi);
+
+
+		switch (sayi)
+		{
+		case 1:
+			printf("pzt ");
+			break;
+
+		case 2:
+			printf("salı ");
+			break;
+		case 3:
+			printf("çarş ");
+			break;
+
+		case 4:
+			printf("perş ");
+			break;
+
+		case 5:
+			printf("cuma ");
+			break;
+		case 6:
+			printf("cmt ");
+			break;
+		case 7:
+			printf("pzr ");
+			break;
+
+		default:
+			printf("hatali sayi");
+
+		}
+
+
+
+
+
+	return 0;
+}
