@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int i;
+	int fakt;
+	int a;
+	a = 1;
+	fakt = 1;
+
+		printf("bir sayi giriniz: ");
+		scanf_s("%d", &i);
+
+	while (a<=i)
+	{
+		fakt = fakt * a;
+		a++;
+		
+	 }
+	printf("%d", fakt);
+
+	return 0;
+}
