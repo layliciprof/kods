@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(void)
+{  
+	int birler, onlar, yuzler;
+	int sayi;
+	sayi = 486;
+
+	yuzler = sayi / 100;
+		printf("%d\n", yuzler);
+	onlar = sayi / 10;
+	onlar = onlar % 10;
+	printf("%d\n", onlar);
+
+	birler = sayi % 10;
+		printf("%d\n", birler);
+
+
+
+	return 0;
+}
