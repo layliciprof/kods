@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main(void)
+{
+	char ders;
+
+	printf("harflerden birini giriniz:");
+		scanf_s("%c", &ders);
+
+		switch (ders)
+		{
+		case 't':
+			printf("turkçe");
+			break;
+
+		case 's':
+			printf("sosyal ");
+			break;
+		case 'm':
+			printf("mat ");
+			break;
+
+		case 'f':
+			printf("fen ");
+			break;
+		default:
+			printf("hatali ya da buyuk harf girdiniz ");
+
+		}
+
+
+
+
+
+	return 0;
+}
