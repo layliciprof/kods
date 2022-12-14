@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+
+	int satir, sutun, i, j, k, n;
+	printf("Satir sayisi: ");
+	scanf_s("%d",&satir);
+	printf("Sutun sayisi: ");
+	scanf_s("%d",&sutun);
+	 
+	int matris[satir] [sutun];
+
+	for (i = 0; i < satir; i++) {
+		for (j = 0; j < sutun; j++) {
+			printf("\n degeriniz[%d] [%d]---->", i + 1, j + 1);
+			scanf_s("%d", &matris[i][j]);
+		}
+
+	}
+	printf("\n\n");
+	for (k = 0; k < satir; k++) {
+		for (n = 0; n < sutun; n++) {
+			printf("%d ", matris[k][n]);
+		}
+		printf("\n");
+	}
+		return 0;
+}
